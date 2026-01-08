@@ -1,4 +1,7 @@
 # 🧠 Winsanity
+
+### 🌐 **Live App:** [https://winsanity.vercel.app](https://winsanity.vercel.app)
+
 > **AI-Powered Stock Analysis & Market Intelligence System**
 
 [![Live Demo](https://img.shields.io/badge/Demo-Visit%20Live%20Site-blue?style=for-the-badge&logo=vercel)](https://winsanity.vercel.app)
