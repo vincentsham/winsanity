@@ -10,7 +10,7 @@
 
 ---
 
-## 📸 Dashboard Preview
+## 📸 Webpage Preview
 
 ![Winsanity Main Page](./assets/main.png)
 
@@ -23,17 +23,25 @@ A deterministic scoring system (0-100) that calculates a stock's strength based 
 * **Methodology:** Every stock is ranked against a cohort of 30+ top market cap stocks.
 * **Metrics:** Aggregates real-time performance in Valuation, Momentum, and Fundamentals into a single objective score.
 
+![Winsanity Stock Page](./assets/stock.png)
+![Winsanity Metrics Page](./assets/metrics.png)
+
 ### **2. AI-Powered Narrative Analysis**
 * **Catalyst Agents:** Scrape and analyze news to separate "Noise" from "Signal," generating the **Bull Case** and **Bear Case**.
+
+![Winsanity Catalyst Page](./assets/catalysts.png)
+
 * **Earnings Agents:** Parse thousands of lines of earnings call transcripts to extract management sentiment and key takeaways.
+
+![Winsanity Earnings Calls Page](./assets/earnings_calls.png)
+![Winsanity Earnings Calls Page](./assets/earnings_calls2.png)
 
 ### **3. ⚔️ Competitive Comparison**
 * **Multi-Ticker Analysis:** Instantly compare stocks (e.g., NVDA vs. TSLA vs. AAPL) side-by-side.
 * **Radar Visuals:** Uses **Recharts Radar Charts** to visually overlay the percentile strengths of multiple assets.
 
-![Comparison Radar Chart](https://via.placeholder.com/800x450?text=Paste+Comparison+Radar+Link+Here)
-
-![Stock Detail Analysis](https://via.placeholder.com/800x450?text=Paste+Bull+Bear+Case+Link+Here)
+![Comparison Radar Chart](./assets/radar.png)
+![Stock Comparison Analysis](./assets/comparisons.png)
 
 ---
 
