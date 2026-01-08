@@ -25,6 +25,9 @@ A deterministic scoring system (0-100) that calculates a stock's strength based 
 
 ![Winsanity Stock Page](./assets/stock.png)
 ![Winsanity Metrics Page](./assets/metrics.png)
+![Winsanity Earnings Page](./assets/earnings.png)
+![Winsanity Analysts Page](./assets/analysts.png)
+
 
 ### **2. AI-Powered Narrative Analysis**
 * **Catalyst Agents:** Scrape and analyze news to separate "Noise" from "Signal," generating the **Bull Case** and **Bear Case**.
