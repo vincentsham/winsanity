@@ -2,7 +2,6 @@
 > **AI-Powered Stock Analysis & Market Intelligence System**
 
 [![Live Demo](https://img.shields.io/badge/Demo-Visit%20Live%20Site-blue?style=for-the-badge&logo=vercel)](https://winsanity.vercel.app)
-[![Tech Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20PostgreSQL%20%7C%20Recharts-black?style=for-the-badge)](https://nextjs.org)
 
 **Winsanity** is a financial intelligence platform powered by a **Multi-AI Agent System**. It automates due diligence by synthesizing complex market data into a single **"Win Score"** and structured narrative reports.
 
