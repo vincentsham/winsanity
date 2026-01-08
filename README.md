@@ -6,9 +6,7 @@
 
 [![Live Demo](https://img.shields.io/badge/Demo-Visit%20Live%20Site-blue?style=for-the-badge&logo=vercel)](https://winsanity.vercel.app)
 
-**Winsanity** is a financial intelligence platform powered by a **Multi-AI Agent System**. It automates due diligence by synthesizing complex market data into a single **"Win Score"** and structured narrative reports.
-
-Unlike standard dashboards, Winsanity acts as an automated analyst—reading earnings calls, identifying catalysts, and ranking fundamentals against a peer group of 30+ top stocks.
+**Winsanity** is a financial intelligence platform that combines quantitative precision with qualitative AI insights. It automates due diligence by ranking stocks against a high-cap cohort and using AI agents to generate structured narrative reports.
 
 ---
 
@@ -20,19 +18,20 @@ Unlike standard dashboards, Winsanity acts as an automated analyst—reading ear
 
 ## 🚀 Key Features
 
-### **1. The "Win Score" Engine**
-A proprietary composite score (0-100) that aggregates technicals, fundamentals, and sentiment into a single actionable metric.
+### **1. The "Win Score" Engine (Algorithmic)**
+A deterministic scoring system (0-100) that calculates a stock's strength based on **percentile rankings**.
+* **Methodology:** Every stock is ranked against a cohort of 30+ top market cap stocks.
+* **Metrics:** Aggregates real-time performance in Valuation, Momentum, and Fundamentals into a single objective score.
 
-### **2. ⚔️ Competitive Comparison**
+### **2. AI-Powered Narrative Analysis**
+* **Catalyst Agents:** Scrape and analyze news to separate "Noise" from "Signal," generating the **Bull Case** and **Bear Case**.
+* **Earnings Agents:** Parse thousands of lines of earnings call transcripts to extract management sentiment and key takeaways.
+
+### **3. ⚔️ Competitive Comparison**
 * **Multi-Ticker Analysis:** Instantly compare stocks (e.g., NVDA vs. TSLA vs. AAPL) side-by-side.
-* **Radar Visuals:** Uses **Recharts Radar Charts** to visually overlay distinct metrics.
+* **Radar Visuals:** Uses **Recharts Radar Charts** to visually overlay the percentile strengths of multiple assets.
 
 ![Comparison Radar Chart](https://via.placeholder.com/800x450?text=Paste+Comparison+Radar+Link+Here)
-
-### **3. AI-Generated Investment Thesis**
-* **🐂 The Bull Case:** Automatically extracts positive drivers and growth catalysts.
-* **🐻 The Bear Case:** Identifies potential risk factors and headwinds.
-* **Events by Impact:** Ranks news and catalysts by their potential market impact.
 
 ![Stock Detail Analysis](https://via.placeholder.com/800x450?text=Paste+Bull+Bear+Case+Link+Here)
 
@@ -44,24 +43,29 @@ Winsanity is a **monorepo full-stack application** built entirely on Next.js, op
 
 | Component | Technology | Role |
 | :--- | :--- | :--- |
-| **Full Stack** | **Next.js 14** | Unified frontend/backend; handles Server Actions for AI request orchestration. |
-| **Database** | **PostgreSQL** | Relational storage for historical scores, cached reports, and user watchlists. |
+| **Full Stack** | **Next.js 14** | Unified frontend/backend; handles Server Actions for orchestration. |
+| **Database** | **PostgreSQL** | Relational storage for historical data and user watchlists. |
 | **Visualization** | **Recharts** | Renders interactive price charts and **Radar comparison plots**. |
-| **AI Layer** | **Multi-Agent System** | Parallel agents dedicated to *Sentiment*, *Technicals*, and *Earnings* parsing. |
+| **AI Layer** | **Multi-Agent System** | Dedicated agents for *News Classification* and *Transcript Parsing*. |
 | **Styling** | **Tailwind CSS** | Responsive, dark-mode-first UI design. |
 
 ---
 
-## 🧠 How It Works: The Agent Pipeline
+## 🧠 How It Works: The Hybrid Pipeline
 
-When a user views a stock (e.g., NVDA), the system triggers a multi-step pipeline:
+When a user views a stock (e.g., NVDA), the system runs a parallel pipeline combining math and AI:
 
-1.  **Data Ingestion:** Fetches real-time price, OHLCV, and raw financial statements.
-2.  **Context Retrieval:** Pulls transcripts from the latest earnings calls and recent news headlines.
-3.  **Agent Processing:**
-    * *Catalyst Agent:* Classifies news into "Bullish" or "Bearish" buckets.
-    * *Fundamental Agent:* Calculates percentile rankings against the tracked cohort.
-4.  **Synthesis:** The "Supervisor" agent compiles these distinct streams into the final **Win Score** and renders the report via Server Components.
+1.  **Quantitative Layer (The Win Score):**
+    * The system fetches raw financial data (P/E, RSI, Revenue Growth).
+    * It calculates the **Percentile Rank** of these metrics against the tracked peer group (Top 30+ stocks).
+    * These percentiles are weighted to generate the final **Win Score**.
+
+2.  **Qualitative Layer (The AI Agents):**
+    * **Catalyst Agent:** Fetches recent news, filters out duplicates, and summarizes the distinct Bull/Bear arguments.
+    * **Transcript Agent:** Retrieves the latest earnings call text and summarizes the "Key Takeaways" section.
+
+3.  **Delivery:**
+    * The frontend receives the calculated Score (Math) and the generated Reports (AI) simultaneously via Next.js Server Components.
 
 ---
 
