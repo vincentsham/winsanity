@@ -12,7 +12,7 @@
 
 ## 📸 Dashboard Preview
 
-![Winsanity Main Dashboard](https://via.placeholder.com/800x450?text=Paste+Dashboard+Link+Here)
+![Winsanity Main Page](./assets/main.png)
 
 ---
 
