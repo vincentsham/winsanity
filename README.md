@@ -20,7 +20,7 @@
 
 ### **1. The "Win Score" Engine (Algorithmic)**
 A deterministic scoring system (0-100) that calculates a stock's strength based on **percentile rankings**.
-* **Methodology:** Every stock is ranked against a cohort of 30+ top market cap stocks.
+* **Methodology:** Every stock is ranked against a cohort of 30+ high market cap stocks.
 * **Metrics:** Aggregates real-time performance in Valuation, Momentum, and Fundamentals into a single objective score.
 
 ![Winsanity Stock Page](./assets/stock.png)
